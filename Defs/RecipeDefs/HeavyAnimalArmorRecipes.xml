@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<!-- produce -->
+
+	<RecipeDef ParentName="HeavyAnimalArmorProductionBase">
+		<defName>MakeHeavyAnimalArmorTiny</defName>
+		<label>make heavy animal armor (tiny)</label>
+		<description>Make a set of heavy animal armor out of steel, plasteel and synthread lining.\n\nFits on animals with a mature body size of less than 0.3.</description>
+		<workAmount>5000</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Synthread</li>
+					</thingDefs>
+				</filter>
+				<count>5</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Steel</li>
+					</thingDefs>
+				</filter>
+				<count>30</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Plasteel</li>
+					</thingDefs>
+				</filter>
+				<count>15</count>
+			</li>
+		</ingredients>
+		<products>
+			<HeavyAnimalArmorTiny>1</HeavyAnimalArmorTiny>
+		</products>
+	</RecipeDef>
+
+	<RecipeDef ParentName="HeavyAnimalArmorProductionBase">
+		<defName>MakeHeavyAnimalArmorSmall</defName>
+		<label>make heavy animal armor (small)</label>
+		<description>Make a set of heavy animal armor out of steel, plasteel and synthread lining.\n\nFits on animals with a mature body size of 0.3 or greater, but less than 0.7.</description>
+		<workAmount>10000</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Synthread</li>
+					</thingDefs>
+				</filter>
+				<count>15</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Steel</li>
+					</thingDefs>
+				</filter>
+				<count>60</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Plasteel</li>
+					</thingDefs>
+				</filter>
+				<count>30</count>
+			</li>
+		</ingredients>
+		<products>
+			<HeavyAnimalArmorSmall>1</HeavyAnimalArmorSmall>
+		</products>
+	</RecipeDef>
+
+	<RecipeDef ParentName="HeavyAnimalArmorProductionBase">
+		<defName>MakeHeavyAnimalArmorMedium</defName>
+		<label>make heavy animal armor (medium)</label>
+		<description>Make a set of heavy animal armor out of steel, plasteel and synthread lining.\n\nFits on animals with a mature body size of 0.7 or greater, but less than 1.3.</description>
+		<workAmount>18000</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Synthread</li>
+					</thingDefs>
+				</filter>
+				<count>30</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Steel</li>
+					</thingDefs>
+				</filter>
+				<count>110</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Plasteel</li>
+					</thingDefs>
+				</filter>
+				<count>50</count>
+			</li>
+		</ingredients>
+		<products>
+			<HeavyAnimalArmorMedium>1</HeavyAnimalArmorMedium>
+		</products>
+	</RecipeDef>
+
+	<RecipeDef ParentName="HeavyAnimalArmorProductionBase">
+		<defName>MakeHeavyAnimalArmorLarge</defName>
+		<label>make heavy animal armor (large)</label>
+		<description>Make a set of heavy animal armor out of steel, plasteel and synthread lining.\n\nFits on animals with a mature body size of 1.3 or greater, but less than 2.4.</description>
+		<workAmount>31500</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Synthread</li>
+					</thingDefs>
+				</filter>
+				<count>50</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Steel</li>
+					</thingDefs>
+				</filter>
+				<count>190</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Plasteel</li>
+					</thingDefs>
+				</filter>
+				<count>90</count>
+			</li>
+		</ingredients>
+		<products>
+			<HeavyAnimalArmorLarge>1</HeavyAnimalArmorLarge>
+		</products>
+	</RecipeDef>
+
+	<RecipeDef ParentName="HeavyAnimalArmorProductionBase">
+		<defName>MakeHeavyAnimalArmorHuge</defName>
+		<label>make heavy animal armor (huge)</label>
+		<description>Make a set of heavy animal armor out of steel, plasteel and synthread lining.\n\nFits on animals with a mature body size of 2.4 or greater.</description>
+		<workAmount>63000</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Synthread</li>
+					</thingDefs>
+				</filter>
+				<count>100</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Steel</li>
+					</thingDefs>
+				</filter>
+				<count>385</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Plasteel</li>
+					</thingDefs>
+				</filter>
+				<count>175</count>
+			</li>
+		</ingredients>
+		<products>
+			<HeavyAnimalArmorHuge>1</HeavyAnimalArmorHuge>
+		</products>
+	</RecipeDef>
+
+	<!-- install -->
+
+	<RecipeDef ParentName="HeavyAnimalArmorInstallationBase">
+		<defName>InstallHeavyAnimalArmorTiny</defName>
+		<label>install heavy animal armor (tiny)</label>
+		<workAmount>1400</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>HeavyAnimalArmorTiny</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>HeavyAnimalArmorTiny</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<addsHediff>HeavyAnimalArmorTiny</addsHediff>
+	</RecipeDef>
+
+	<RecipeDef ParentName="HeavyAnimalArmorInstallationBase">
+		<defName>InstallHeavyAnimalArmorSmall</defName>
+		<label>install heavy animal armor (small)</label>
+		<workAmount>2800</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>HeavyAnimalArmorSmall</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>HeavyAnimalArmorSmall</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<addsHediff>HeavyAnimalArmorSmall</addsHediff>
+	</RecipeDef>
+
+	<RecipeDef ParentName="HeavyAnimalArmorInstallationBase">
+		<defName>InstallHeavyAnimalArmorMedium</defName>
+		<label>install heavy animal armor (medium)</label>
+		<workAmount>5000</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>HeavyAnimalArmorMedium</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>HeavyAnimalArmorMedium</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<addsHediff>HeavyAnimalArmorMedium</addsHediff>
+	</RecipeDef>
+
+	<RecipeDef ParentName="HeavyAnimalArmorInstallationBase">
+		<defName>InstallHeavyAnimalArmorLarge</defName>
+		<label>install heavy animal armor (large)</label>
+		<workAmount>8750</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>HeavyAnimalArmorLarge</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>HeavyAnimalArmorLarge</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<addsHediff>HeavyAnimalArmorLarge</addsHediff>
+	</RecipeDef>
+
+	<RecipeDef ParentName="HeavyAnimalArmorInstallationBase">
+		<defName>InstallHeavyAnimalArmorHuge</defName>
+		<label>install heavy animal armor (huge)</label>
+		<workAmount>17500</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>HeavyAnimalArmorHuge</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>HeavyAnimalArmorHuge</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<addsHediff>HeavyAnimalArmorHuge</addsHediff>
+	</RecipeDef>
+
+</Defs>

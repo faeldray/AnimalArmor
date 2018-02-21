@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<!-- tiny animals list:
+			[defName="Iguana" or defName="Chicken" or @Name="BaseHare" or defName="Megascarab" or defName="Cat" or defName="Squirrel" or defName="Chinchilla" or defName="Boomrat" or defName="Rat" or defName="Cobra"]-->
+			<li Class="PatchOperationSequence">
+				<success>Always</success>
+				<operations>
+					<li Class="PatchOperationTest">
+						<xpath>/Defs/ThingDef[defName="Iguana" or defName="Chicken" or @Name="BaseHare" or defName="Megascarab" or defName="Cat" or defName="Squirrel" or defName="Chinchilla" or defName="Boomrat" or defName="Rat" or defName="Cobra"]/recipes</xpath>
+						<success>Invert</success>
+					</li>
+					<li Class="PatchOperationAdd">
+						<xpath>/Defs/ThingDef[defName="Iguana" or defName="Chicken" or @Name="BaseHare" or defName="Megascarab" or defName="Cat" or defName="Squirrel" or defName="Chinchilla" or defName="Boomrat" or defName="Rat" or defName="Cobra"]</xpath>
+						<value>
+							<recipes/>
+						</value>
+					</li>
+				</operations>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/ThingDef[defName="Iguana" or defName="Chicken" or @Name="BaseHare" or defName="Megascarab" or defName="Cat" or defName="Squirrel" or defName="Chinchilla" or defName="Boomrat" or defName="Rat" or defName="Cobra"]/recipes</xpath>
+				<value>
+					<li>InstallMakeshiftAnimalArmorTiny</li>
+					<li>InstallStandardAnimalArmorTiny</li>
+					<li>InstallHeavyAnimalArmorTiny</li>
+					<li>RemoveAnimalArmor</li>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+
+</Patch>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+	<name>[XND] Animal Armor</name>
+	<author>XeoNovaDan</author>
+	<url>https://ludeon.com/forums/index.php?topic=29503.0</url>
+	<targetVersion>0.18.0</targetVersion>
+	<description>Current Version: v1.0 (21st February 2018)\n\nArmor up your animals and prepare for battle!\n\nDue to vanilla framework limitations, armor has to be surgically installed. To compensate for this, installing armor onto an animal and removing armor from an animal is impossible to fail.\n\nArmor comes in three different flavors:\n* Makeshift - Low-tech, cheap armor. Moderate protection, mild movement speed penalty.\n* Standard - Modern, moderately expensive armor. Moderate protection, no movement speed penalty.\n* Heavy - Modern, expensive armor. Significant protection, moderate movement speed penalty.</description>
+</ModMetaData>

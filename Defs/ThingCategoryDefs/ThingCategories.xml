@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<ThingCategoryDef>
+		<defName>AnimalArmor</defName>
+		<label>animal armor</label>
+		<parent>BodyParts</parent>
+	</ThingCategoryDef>
+
+	<ThingCategoryDef>
+		<defName>MakeshiftAnimalArmor</defName>
+		<label>makeshift</label>
+		<parent>AnimalArmor</parent>
+	</ThingCategoryDef>
+
+	<ThingCategoryDef>
+		<defName>StandardAnimalArmor</defName>
+		<label>standard</label>
+		<parent>AnimalArmor</parent>
+	</ThingCategoryDef>
+
+	<ThingCategoryDef>
+		<defName>HeavyAnimalArmor</defName>
+		<label>heavy</label>
+		<parent>AnimalArmor</parent>
+	</ThingCategoryDef>
+
+</Defs>

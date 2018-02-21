@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<RecipeDef ParentName="AnimalArmorInstallationBase">
+		<defName>RemoveAnimalArmor</defName>
+		<label>remove armor</label>
+		<jobString>Removing armor.</jobString>
+		<workAmount>2000</workAmount>
+		<addsHediff>NullAnimalArmor</addsHediff>
+	</RecipeDef>
+
+</Defs>

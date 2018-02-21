@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<!-- produce -->
+
+	<RecipeDef ParentName="StandardAnimalArmorProductionBase">
+		<defName>MakeStandardAnimalArmorTiny</defName>
+		<label>make standard animal armor (tiny)</label>
+		<description>Make a set of standard animal armor out of steel, plasteel and cloth lining.\n\nFits on animals with a mature body size of less than 0.3.</description>
+		<workAmount>3500</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Cloth</li>
+					</thingDefs>
+				</filter>
+				<count>5</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Steel</li>
+					</thingDefs>
+				</filter>
+				<count>25</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Plasteel</li>
+					</thingDefs>
+				</filter>
+				<count>5</count>
+			</li>
+		</ingredients>
+		<products>
+			<StandardAnimalArmorTiny>1</StandardAnimalArmorTiny>
+		</products>
+	</RecipeDef>
+
+	<RecipeDef ParentName="StandardAnimalArmorProductionBase">
+		<defName>MakeStandardAnimalArmorSmall</defName>
+		<label>make standard animal armor (small)</label>
+		<description>Make a set of standard animal armor out of steel, plasteel and cloth lining.\n\nFits on animals with a mature body size of 0.3 or greater, but less than 0.7.</description>
+		<workAmount>7000</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Cloth</li>
+					</thingDefs>
+				</filter>
+				<count>15</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Steel</li>
+					</thingDefs>
+				</filter>
+				<count>50</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Plasteel</li>
+					</thingDefs>
+				</filter>
+				<count>10</count>
+			</li>
+		</ingredients>
+		<products>
+			<StandardAnimalArmorSmall>1</StandardAnimalArmorSmall>
+		</products>
+	</RecipeDef>
+
+	<RecipeDef ParentName="StandardAnimalArmorProductionBase">
+		<defName>MakeStandardAnimalArmorMedium</defName>
+		<label>make standard animal armor (medium)</label>
+		<description>Make a set of standard animal armor out of steel, plasteel and cloth lining.\n\nFits on animals with a mature body size of 0.7 or greater, but less than 1.3.</description>
+		<workAmount>12000</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Cloth</li>
+					</thingDefs>
+				</filter>
+				<count>30</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Steel</li>
+					</thingDefs>
+				</filter>
+				<count>80</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Plasteel</li>
+					</thingDefs>
+				</filter>
+				<count>20</count>
+			</li>
+		</ingredients>
+		<products>
+			<StandardAnimalArmorMedium>1</StandardAnimalArmorMedium>
+		</products>
+	</RecipeDef>
+
+	<RecipeDef ParentName="StandardAnimalArmorProductionBase">
+		<defName>MakeStandardAnimalArmorLarge</defName>
+		<label>make standard animal armor (large)</label>
+		<description>Make a set of standard animal armor out of steel, plasteel and cloth lining.\n\nFits on animals with a mature body size of 1.3 or greater, but less than 2.4.</description>
+		<workAmount>21000</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Cloth</li>
+					</thingDefs>
+				</filter>
+				<count>50</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Steel</li>
+					</thingDefs>
+				</filter>
+				<count>140</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Plasteel</li>
+					</thingDefs>
+				</filter>
+				<count>35</count>
+			</li>
+		</ingredients>
+		<products>
+			<StandardAnimalArmorLarge>1</StandardAnimalArmorLarge>
+		</products>
+	</RecipeDef>
+
+	<RecipeDef ParentName="StandardAnimalArmorProductionBase">
+		<defName>MakeStandardAnimalArmorHuge</defName>
+		<label>make standard animal armor (huge)</label>
+		<description>Make a set of standard animal armor out of steel, plasteel and cloth lining.\n\nFits on animals with a mature body size of 2.4 or greater.</description>
+		<workAmount>42000</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Cloth</li>
+					</thingDefs>
+				</filter>
+				<count>100</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Steel</li>
+					</thingDefs>
+				</filter>
+				<count>280</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Plasteel</li>
+					</thingDefs>
+				</filter>
+				<count>70</count>
+			</li>
+		</ingredients>
+		<products>
+			<StandardAnimalArmorHuge>1</StandardAnimalArmorHuge>
+		</products>
+	</RecipeDef>
+
+	<!-- install -->
+
+	<RecipeDef ParentName="StandardAnimalArmorInstallationBase">
+		<defName>InstallStandardAnimalArmorTiny</defName>
+		<label>install standard animal armor (tiny)</label>
+		<workAmount>850</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>StandardAnimalArmorTiny</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>StandardAnimalArmorTiny</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<addsHediff>StandardAnimalArmorTiny</addsHediff>
+	</RecipeDef>
+
+	<RecipeDef ParentName="StandardAnimalArmorInstallationBase">
+		<defName>InstallStandardAnimalArmorSmall</defName>
+		<label>install standard animal armor (small)</label>
+		<workAmount>1700</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>StandardAnimalArmorSmall</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>StandardAnimalArmorSmall</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<addsHediff>StandardAnimalArmorSmall</addsHediff>
+	</RecipeDef>
+
+	<RecipeDef ParentName="StandardAnimalArmorInstallationBase">
+		<defName>InstallStandardAnimalArmorMedium</defName>
+		<label>install standard animal armor (medium)</label>
+		<workAmount>3000</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>StandardAnimalArmorMedium</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>StandardAnimalArmorMedium</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<addsHediff>StandardAnimalArmorMedium</addsHediff>
+	</RecipeDef>
+
+	<RecipeDef ParentName="StandardAnimalArmorInstallationBase">
+		<defName>InstallStandardAnimalArmorLarge</defName>
+		<label>install standard animal armor (large)</label>
+		<workAmount>5250</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>StandardAnimalArmorLarge</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>StandardAnimalArmorLarge</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<addsHediff>StandardAnimalArmorLarge</addsHediff>
+	</RecipeDef>
+
+	<RecipeDef ParentName="StandardAnimalArmorInstallationBase">
+		<defName>InstallStandardAnimalArmorHuge</defName>
+		<label>install standard animal armor (huge)</label>
+		<workAmount>10500</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>StandardAnimalArmorHuge</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>StandardAnimalArmorHuge</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<addsHediff>StandardAnimalArmorHuge</addsHediff>
+	</RecipeDef>
+
+</Defs>

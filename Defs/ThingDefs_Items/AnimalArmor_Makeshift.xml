@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<ThingDef ParentName="MakeshiftAnimalArmorBase">
+		<defName>MakeshiftAnimalArmorTiny</defName>
+		<label>makeshift animal armor (tiny)</label>
+		<description>Crude animal armor forged from steel plates. Offers a moderate amount of protection, but restricts limb movement.\n\nFits on animals with a mature body size of less than 0.3.</description>
+		<statBases>
+			<MarketValue>45</MarketValue>
+			<Mass>3</Mass>
+		</statBases>
+	</ThingDef>
+
+	<ThingDef ParentName="MakeshiftAnimalArmorBase">
+		<defName>MakeshiftAnimalArmorSmall</defName>
+		<label>makeshift animal armor (small)</label>
+		<description>Crude animal armor forged from steel plates. Offers a moderate amount of protection, but restricts limb movement.\n\nFits on animals with a mature body size of 0.3 or greater, but less than 0.7.</description>
+		<statBases>
+			<MarketValue>85</MarketValue>
+			<Mass>6</Mass>
+		</statBases>
+	</ThingDef>
+
+	<ThingDef ParentName="MakeshiftAnimalArmorBase">
+		<defName>MakeshiftAnimalArmorMedium</defName>
+		<label>makeshift animal armor (medium)</label>
+		<description>Crude animal armor forged from steel plates. Offers a moderate amount of protection, but restricts limb movement.\n\nFits on animals with a mature body size of 0.7 or greater, but less than 1.3.</description>
+		<statBases>
+			<MarketValue>150</MarketValue>
+			<Mass>12</Mass>
+		</statBases>
+	</ThingDef>
+
+	<ThingDef ParentName="MakeshiftAnimalArmorBase">
+		<defName>MakeshiftAnimalArmorLarge</defName>
+		<label>makeshift animal armor (large)</label>
+		<description>Crude animal armor forged from steel plates. Offers a moderate amount of protection, but restricts limb movement.\n\nFits on animals with a mature body size of 1.3 or greater, but less than 2.4.</description>
+		<statBases>
+			<MarketValue>260</MarketValue>
+			<Mass>24</Mass>
+		</statBases>
+	</ThingDef>
+
+	<ThingDef ParentName="MakeshiftAnimalArmorBase">
+		<defName>MakeshiftAnimalArmorHuge</defName>
+		<label>makeshift animal armor (huge)</label>
+		<description>Crude animal armor forged from steel plates. Offers a moderate amount of protection, but restricts limb movement.\n\nFits on animals with a mature body size of 2.4 or greater.</description>
+		<statBases>
+			<MarketValue>525</MarketValue>
+			<Mass>48</Mass>
+		</statBases>
+	</ThingDef>
+
+</Defs>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<!--=============================== Tier 3: Hi-tech research bench ===================================-->
+
+	<ResearchProjectDef ParentName="AnimalArmorResearchBase">
+		<defName>AdvancedAnimalArmorProduction</defName>
+		<label>advanced animal armor production</label>
+		<description>Further study animal anatomy using modern technology to be able to produce standard and heavy animal armor at a machining table.</description>
+		<baseCost>1500</baseCost>
+		<techLevel>Industrial</techLevel>
+		<prerequisites>
+			<li>MicroelectronicsBasics</li>
+			<li>BasicAnimalArmorProduction</li>
+			<li>Machining</li>
+		</prerequisites>
+		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+		<researchViewX>2</researchViewX>
+		<researchViewY>0</researchViewY>
+	</ResearchProjectDef>
+
+</Defs>

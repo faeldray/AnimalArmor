@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<!-- medium animals list:
+			[defName="Gazelle" or defName="Pig" or defName="LabradorRetriever" or defName="Lynx" or defName="Cassowary" or defName="Emu" or defName="Spelopede" or defName="WildBoar" or defName="Ibex" or @Name="ThingBaseWolf" or defName="Husky" or defName="Deer" or defName="Ostrich" or defName="Alpaca" or defName="Warg" or defName="Megaspider"]-->
+			<li Class="PatchOperationSequence">
+				<success>Always</success>
+				<operations>
+					<li Class="PatchOperationTest">
+						<xpath>/Defs/ThingDef[defName="Gazelle" or defName="Pig" or defName="LabradorRetriever" or defName="Lynx" or defName="Cassowary" or defName="Emu" or defName="Spelopede" or defName="WildBoar" or defName="Ibex" or @Name="ThingBaseWolf" or defName="Husky" or defName="Deer" or defName="Ostrich" or defName="Alpaca" or defName="Warg" or defName="Megaspider"]/recipes</xpath>
+						<success>Invert</success>
+					</li>
+					<li Class="PatchOperationAdd">
+						<xpath>/Defs/ThingDef[defName="Gazelle" or defName="Pig" or defName="LabradorRetriever" or defName="Lynx" or defName="Cassowary" or defName="Emu" or defName="Spelopede" or defName="WildBoar" or defName="Ibex" or @Name="ThingBaseWolf" or defName="Husky" or defName="Deer" or defName="Ostrich" or defName="Alpaca" or defName="Warg" or defName="Megaspider"]</xpath>
+						<value>
+							<recipes/>
+						</value>
+					</li>
+				</operations>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/ThingDef[defName="Gazelle" or defName="Pig" or defName="LabradorRetriever" or defName="Lynx" or defName="Cassowary" or defName="Emu" or defName="Spelopede" or defName="WildBoar" or defName="Ibex" or @Name="ThingBaseWolf" or defName="Husky" or defName="Deer" or defName="Ostrich" or defName="Alpaca" or defName="Warg" or defName="Megaspider"]/recipes</xpath>
+				<value>
+					<li>InstallMakeshiftAnimalArmorMedium</li>
+					<li>InstallStandardAnimalArmorMedium</li>
+					<li>InstallHeavyAnimalArmorMedium</li>
+					<li>RemoveAnimalArmor</li>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+
+</Patch>

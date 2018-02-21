@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<!-- huge animals list:
+			[defName="Rhinoceros" or defName="Thrumbo" or defName="Elephant" or defName="Megasloth"]-->
+			<li Class="PatchOperationSequence">
+				<success>Always</success>
+				<operations>
+					<li Class="PatchOperationTest">
+						<xpath>/Defs/ThingDef[defName="Rhinoceros" or defName="Thrumbo" or defName="Elephant" or defName="Megasloth"]/recipes</xpath>
+						<success>Invert</success>
+					</li>
+					<li Class="PatchOperationAdd">
+						<xpath>/Defs/ThingDef[defName="Rhinoceros" or defName="Thrumbo" or defName="Elephant" or defName="Megasloth"]</xpath>
+						<value>
+							<recipes/>
+						</value>
+					</li>
+				</operations>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/ThingDef[defName="Rhinoceros" or defName="Thrumbo" or defName="Elephant" or defName="Megasloth"]/recipes</xpath>
+				<value>
+					<li>InstallMakeshiftAnimalArmorHuge</li>
+					<li>InstallStandardAnimalArmorHuge</li>
+					<li>InstallHeavyAnimalArmorHuge</li>
+					<li>RemoveAnimalArmor</li>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+
+</Patch>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<HediffDef Name="StandardAnimalArmorHediffBase" ParentName="ImplantHediffBase" Abstract="True">
+		<label>standard armor</label>
+		<labelNoun>standard animal armor.</labelNoun>
+		<stages>
+			<li>
+				<statOffsets>
+					<ArmorRating_Sharp>0.3</ArmorRating_Sharp>
+					<ArmorRating_Blunt>0.1</ArmorRating_Blunt>
+				</statOffsets>
+			</li>
+		</stages>
+	</HediffDef> 
+
+	<HediffDef ParentName="StandardAnimalArmorHediffBase">
+		<defName>StandardAnimalArmorTiny</defName>
+		<spawnThingOnRemoved>StandardAnimalArmorTiny</spawnThingOnRemoved>
+	</HediffDef>
+
+	<HediffDef ParentName="StandardAnimalArmorHediffBase">
+		<defName>StandardAnimalArmorSmall</defName>
+		<spawnThingOnRemoved>StandardAnimalArmorSmall</spawnThingOnRemoved>
+	</HediffDef>
+
+	<HediffDef ParentName="StandardAnimalArmorHediffBase">
+		<defName>StandardAnimalArmorMedium</defName>
+		<spawnThingOnRemoved>StandardAnimalArmorMedium</spawnThingOnRemoved>
+	</HediffDef>
+
+	<HediffDef ParentName="StandardAnimalArmorHediffBase">
+		<defName>StandardAnimalArmorLarge</defName>
+		<spawnThingOnRemoved>StandardAnimalArmorLarge</spawnThingOnRemoved>
+	</HediffDef>
+
+	<HediffDef ParentName="StandardAnimalArmorHediffBase">
+		<defName>StandardAnimalArmorHuge</defName>
+		<spawnThingOnRemoved>StandardAnimalArmorHuge</spawnThingOnRemoved>
+	</HediffDef>
+
+</Defs>

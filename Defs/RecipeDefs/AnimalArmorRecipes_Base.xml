@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<!-- produce -->
+
+	<RecipeDef Name="MakeshiftAnimalArmorProductionBase" Abstract="True">
+		<jobString>Making makeshift animal armor.</jobString>
+		<workSpeedStat>SmithingSpeed</workSpeedStat>
+		<soundWorking>Recipe_Smith</soundWorking>
+		<researchPrerequisite>BasicAnimalArmorProduction</researchPrerequisite>
+		<skillRequirements>
+			<Crafting>3</Crafting>
+		</skillRequirements>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Steel</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<recipeUsers>
+			<li>FueledSmithy</li>
+			<li>ElectricSmithy</li>
+		</recipeUsers>
+	</RecipeDef>
+
+	<RecipeDef Name="StandardAnimalArmorProductionBase" Abstract="True">
+		<jobString>Making standard animal armor.</jobString>
+		<workSpeedStat>SmithingSpeed</workSpeedStat>
+		<soundWorking>Recipe_Smith</soundWorking>
+		<researchPrerequisite>AdvancedAnimalArmorProduction</researchPrerequisite>
+		<skillRequirements>
+			<Crafting>6</Crafting>
+		</skillRequirements>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Cloth</li>
+				<li>Steel</li>
+				<li>Plasteel</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<recipeUsers>
+			<li>TableMachining</li>
+		</recipeUsers>
+	</RecipeDef>
+
+	<RecipeDef Name="HeavyAnimalArmorProductionBase" Abstract="True">
+		<jobString>Making heavy animal armor.</jobString>
+		<workSpeedStat>SmithingSpeed</workSpeedStat>
+		<soundWorking>Recipe_Smith</soundWorking>
+		<researchPrerequisite>AdvancedAnimalArmorProduction</researchPrerequisite>
+		<skillRequirements>
+			<Crafting>8</Crafting>
+		</skillRequirements>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Synthread</li>
+				<li>Steel</li>
+				<li>Plasteel</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<recipeUsers>
+			<li>TableMachining</li>
+		</recipeUsers>
+	</RecipeDef>
+
+	<!-- install -->
+
+	<RecipeDef Name="AnimalArmorInstallationBase" Abstract="True">
+		<effectWorking>Surgery</effectWorking>
+		<soundWorking>Recipe_Surgery</soundWorking>
+		<workSpeedStat>MedicalOperationSpeed</workSpeedStat>
+		<workSkill>Medicine</workSkill>
+		<workSkillLearnFactor>0</workSkillLearnFactor>
+		<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
+		<surgerySuccessChanceFactor>Infinity</surgerySuccessChanceFactor>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Medicine</li>
+					</categories>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>Medicine</li>
+			</categories>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Body</li>
+			<li>SnakeBody</li>
+			<li>Shell</li>
+			<li>TurtleShell</li>
+			<li>Torso</li>
+		</appliedOnFixedBodyParts>
+	</RecipeDef>
+
+	<RecipeDef ParentName="AnimalArmorInstallationBase" Name="MakeshiftAnimalArmorInstallationBase" Abstract="True">
+		<jobString>Installing makeshift animal armor.</jobString>
+	</RecipeDef>
+
+	<RecipeDef ParentName="AnimalArmorInstallationBase" Name="StandardAnimalArmorInstallationBase" Abstract="True">
+		<jobString>Installing standard animal armor.</jobString>
+	</RecipeDef>
+
+	<RecipeDef ParentName="AnimalArmorInstallationBase" Name="HeavyAnimalArmorInstallationBase" Abstract="True">
+		<jobString>Installing heavy animal armor.</jobString>
+	</RecipeDef>
+
+</Defs>

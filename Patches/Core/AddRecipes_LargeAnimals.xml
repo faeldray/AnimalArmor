@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<!-- large animals list:
+			[@Name="BigCatThingBase" or defName="Boomalope" or defName="Dromedary" or defName="Cow" or defName="Muffalo" or defName="Elk" or @Name="BaseBear" or defName="Caribou"]-->
+			<li Class="PatchOperationSequence">
+				<success>Always</success>
+				<operations>
+					<li Class="PatchOperationTest">
+						<xpath>/Defs/ThingDef[@Name="BigCatThingBase" or defName="Boomalope" or defName="Dromedary" or defName="Cow" or defName="Muffalo" or defName="Elk" or @Name="BaseBear" or defName="Caribou"]/recipes</xpath>
+						<success>Invert</success>
+					</li>
+					<li Class="PatchOperationAdd">
+						<xpath>/Defs/ThingDef[@Name="BigCatThingBase" or defName="Boomalope" or defName="Dromedary" or defName="Cow" or defName="Muffalo" or defName="Elk" or @Name="BaseBear" or defName="Caribou"]</xpath>
+						<value>
+							<recipes/>
+						</value>
+					</li>
+				</operations>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/ThingDef[@Name="BigCatThingBase" or defName="Boomalope" or defName="Dromedary" or defName="Cow" or defName="Muffalo" or defName="Elk" or @Name="BaseBear" or defName="Caribou"]/recipes</xpath>
+				<value>
+					<li>InstallMakeshiftAnimalArmorLarge</li>
+					<li>InstallStandardAnimalArmorLarge</li>
+					<li>InstallHeavyAnimalArmorLarge</li>
+					<li>RemoveAnimalArmor</li>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+
+</Patch>

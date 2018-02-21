@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<!-- small animals list:
+			[defName="YorkshireTerrier" or defName="Raccoon" or defName="Monkey" or defName="Alphabeaver" or defName="Capybara" or defName="Tortoise" or @Name="ThingBaseFox" or defName="Turkey"]-->
+			<li Class="PatchOperationSequence">
+				<success>Always</success>
+				<operations>
+					<li Class="PatchOperationTest">
+						<xpath>/Defs/ThingDef[defName="YorkshireTerrier" or defName="Raccoon" or defName="Monkey" or defName="Alphabeaver" or defName="Capybara" or defName="Tortoise" or @Name="ThingBaseFox" or defName="Turkey"]/recipes</xpath>
+						<success>Invert</success>
+					</li>
+					<li Class="PatchOperationAdd">
+						<xpath>/Defs/ThingDef[defName="YorkshireTerrier" or defName="Raccoon" or defName="Monkey" or defName="Alphabeaver" or defName="Capybara" or defName="Tortoise" or @Name="ThingBaseFox" or defName="Turkey"]</xpath>
+						<value>
+							<recipes/>
+						</value>
+					</li>
+				</operations>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/ThingDef[defName="YorkshireTerrier" or defName="Raccoon" or defName="Monkey" or defName="Alphabeaver" or defName="Capybara" or defName="Tortoise" or @Name="ThingBaseFox" or defName="Turkey"]/recipes</xpath>
+				<value>
+					<li>InstallMakeshiftAnimalArmorSmall</li>
+					<li>InstallStandardAnimalArmorSmall</li>
+					<li>InstallHeavyAnimalArmorSmall</li>
+					<li>RemoveAnimalArmor</li>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+
+</Patch>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<HediffDef Name="MakeshiftAnimalArmorHediffBase" ParentName="ImplantHediffBase" Abstract="True">
+		<label>makeshift armor</label>
+		<labelNoun>makeshift animal armor.</labelNoun>
+		<stages>
+			<li>
+				<capMods>
+					<li>
+						<capacity>Moving</capacity>
+						<offset>-0.1</offset>
+					</li>
+				</capMods>
+				<statOffsets>
+					<ArmorRating_Sharp>0.3</ArmorRating_Sharp>
+					<ArmorRating_Blunt>0.1</ArmorRating_Blunt>
+				</statOffsets>
+			</li>
+		</stages>
+	</HediffDef> 
+
+	<HediffDef ParentName="MakeshiftAnimalArmorHediffBase">
+		<defName>MakeshiftAnimalArmorTiny</defName>
+		<spawnThingOnRemoved>MakeshiftAnimalArmorTiny</spawnThingOnRemoved>
+	</HediffDef>
+
+	<HediffDef ParentName="MakeshiftAnimalArmorHediffBase">
+		<defName>MakeshiftAnimalArmorSmall</defName>
+		<spawnThingOnRemoved>MakeshiftAnimalArmorSmall</spawnThingOnRemoved>
+	</HediffDef>
+
+	<HediffDef ParentName="MakeshiftAnimalArmorHediffBase">
+		<defName>MakeshiftAnimalArmorMedium</defName>
+		<spawnThingOnRemoved>MakeshiftAnimalArmorMedium</spawnThingOnRemoved>
+	</HediffDef>
+
+	<HediffDef ParentName="MakeshiftAnimalArmorHediffBase">
+		<defName>MakeshiftAnimalArmorLarge</defName>
+		<spawnThingOnRemoved>MakeshiftAnimalArmorLarge</spawnThingOnRemoved>
+	</HediffDef>
+
+	<HediffDef ParentName="MakeshiftAnimalArmorHediffBase">
+		<defName>MakeshiftAnimalArmorHuge</defName>
+		<spawnThingOnRemoved>MakeshiftAnimalArmorHuge</spawnThingOnRemoved>
+	</HediffDef>
+
+</Defs>

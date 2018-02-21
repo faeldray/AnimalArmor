@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<HediffDef ParentName="ImplantHediffBase">
+		<defName>NullAnimalArmor</defName>
+		<label>this shouldn't be visible</label>
+		<labelNoun>null.</labelNoun>
+		<stages>
+			<li>
+				<becomeVisible>false</becomeVisible>
+			</li>
+		</stages>
+	</HediffDef>
+
+</Defs>

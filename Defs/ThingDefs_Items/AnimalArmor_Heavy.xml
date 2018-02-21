@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<ThingDef ParentName="HeavyAnimalArmorBase">
+		<defName>HeavyAnimalArmorTiny</defName>
+		<label>heavy animal armor (tiny)</label>
+		<description>Heavy-duty animal armor. Cumbersome, but offers a significant amount of protection due to thick plasteel plating and a high-quality synthread lining.\n\nFits on animals with a mature body size of less than 0.3.</description>
+		<statBases>
+			<MarketValue>170</MarketValue>
+			<Mass>4</Mass>
+		</statBases>
+	</ThingDef>
+
+	<ThingDef ParentName="HeavyAnimalArmorBase">
+		<defName>HeavyAnimalArmorSmall</defName>
+		<label>heavy animal armor (small)</label>
+		<description>Heavy-duty animal armor. Cumbersome, but offers a significant amount of protection due to thick plasteel plating and a high-quality synthread lining.\n\nFits on animals with a mature body size of 0.3 or greater, but less than 0.7.</description>
+		<statBases>
+			<MarketValue>340</MarketValue>
+			<Mass>8</Mass>
+		</statBases>
+	</ThingDef>
+
+	<ThingDef ParentName="HeavyAnimalArmorBase">
+		<defName>HeavyAnimalArmorMedium</defName>
+		<label>heavy animal armor (medium)</label>
+		<description>Heavy-duty animal armor. Cumbersome, but offers a significant amount of protection due to thick plasteel plating and a high-quality synthread lining.\n\nFits on animals with a mature body size of 0.7 or greater, but less than 1.3.</description>
+		<statBases>
+			<MarketValue>600</MarketValue>
+			<Mass>16</Mass>
+		</statBases>
+	</ThingDef>
+
+	<ThingDef ParentName="HeavyAnimalArmorBase">
+		<defName>HeavyAnimalArmorLarge</defName>
+		<label>heavy animal armor (large)</label>
+		<description>Heavy-duty animal armor. Cumbersome, but offers a significant amount of protection due to thick plasteel plating and a high-quality synthread lining.\n\nFits on animals with a mature body size of 1.3 or greater, but less than 2.4.</description>
+		<statBases>
+			<MarketValue>1050</MarketValue>
+			<Mass>32</Mass>
+		</statBases>
+	</ThingDef>
+
+	<ThingDef ParentName="HeavyAnimalArmorBase">
+		<defName>HeavyAnimalArmorHuge</defName>
+		<label>heavy animal armor (huge)</label>
+		<description>Heavy-duty animal armor. Cumbersome, but offers a significant amount of protection due to thick plasteel plating and a high-quality synthread lining.\n\nFits on animals with a mature body size of 2.4 or greater.</description>
+		<statBases>
+			<MarketValue>2100</MarketValue>
+			<Mass>64</Mass>
+		</statBases>
+	</ThingDef>
+
+</Defs>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<HediffDef Name="HeavyAnimalArmorHediffBase" ParentName="ImplantHediffBase" Abstract="True">
+		<label>heavy armor</label>
+		<labelNoun>heavy animal armor.</labelNoun>
+		<stages>
+			<li>
+				<capMods>
+					<li>
+						<capacity>Moving</capacity>
+						<offset>-0.2</offset>
+					</li>
+				</capMods>
+				<statOffsets>
+					<ArmorRating_Sharp>0.6</ArmorRating_Sharp>
+					<ArmorRating_Blunt>0.2</ArmorRating_Blunt>
+				</statOffsets>
+			</li>
+		</stages>
+	</HediffDef> 
+
+	<HediffDef ParentName="HeavyAnimalArmorHediffBase">
+		<defName>HeavyAnimalArmorTiny</defName>
+		<spawnThingOnRemoved>HeavyAnimalArmorTiny</spawnThingOnRemoved>
+	</HediffDef>
+
+	<HediffDef ParentName="HeavyAnimalArmorHediffBase">
+		<defName>HeavyAnimalArmorSmall</defName>
+		<spawnThingOnRemoved>HeavyAnimalArmorSmall</spawnThingOnRemoved>
+	</HediffDef>
+
+	<HediffDef ParentName="HeavyAnimalArmorHediffBase">
+		<defName>HeavyAnimalArmorMedium</defName>
+		<spawnThingOnRemoved>HeavyAnimalArmorMedium</spawnThingOnRemoved>
+	</HediffDef>
+
+	<HediffDef ParentName="HeavyAnimalArmorHediffBase">
+		<defName>HeavyAnimalArmorLarge</defName>
+		<spawnThingOnRemoved>HeavyAnimalArmorLarge</spawnThingOnRemoved>
+	</HediffDef>
+
+	<HediffDef ParentName="HeavyAnimalArmorHediffBase">
+		<defName>HeavyAnimalArmorHuge</defName>
+		<spawnThingOnRemoved>HeavyAnimalArmorHuge</spawnThingOnRemoved>
+	</HediffDef>
+
+</Defs>

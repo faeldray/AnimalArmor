@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<ThingDef Name="AnimalArmorBase" Abstract="True">
+		<thingClass>ThingWithComps</thingClass>
+		<category>Item</category>
+		<useHitPoints>true</useHitPoints>
+		<selectable>true</selectable>
+		<graphicData>
+			<texPath>Things/Item/BodyPart/ArtificialOrgan</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+			<MaxHitPoints>50</MaxHitPoints>
+			<DeteriorationRate>2.0</DeteriorationRate>
+			<Flammability>1</Flammability>
+			<Beauty>-4</Beauty>
+		</statBases>
+		<altitudeLayer>Item</altitudeLayer>
+		<tickerType>Never</tickerType>
+		<alwaysHaulable>True</alwaysHaulable>
+		<isBodyPartOrImplant>true</isBodyPartOrImplant>
+		<tradeTags>
+			<li>AnimalArmor</li>
+		</tradeTags>
+		<comps>
+			<li Class="CompProperties_Forbiddable"/>
+		</comps>
+		<pathCost>10</pathCost>
+	</ThingDef>
+
+	<ThingDef ParentName="AnimalArmorBase" Name="MakeshiftAnimalArmorBase" Abstract="True">
+		<tradeTags>
+			<li>CrudeAnimalArmor</li>
+		</tradeTags>
+		<thingCategories>
+			<li>MakeshiftAnimalArmor</li>
+		</thingCategories>
+	</ThingDef>
+
+	<ThingDef ParentName="AnimalArmorBase" Name="StandardAnimalArmorBase" Abstract="True">
+		<tradeTags>
+			<li>ModernAnimalArmor</li>
+		</tradeTags>
+		<thingCategories>
+			<li>StandardAnimalArmor</li>
+		</thingCategories>
+	</ThingDef>
+
+	<ThingDef ParentName="AnimalArmorBase" Name="HeavyAnimalArmorBase" Abstract="True">
+		<tradeTags>
+			<li>ModernAnimalArmor</li>
+		</tradeTags>
+		<thingCategories>
+			<li>HeavyAnimalArmor</li>
+		</thingCategories>
+	</ThingDef>
+
+</Defs>

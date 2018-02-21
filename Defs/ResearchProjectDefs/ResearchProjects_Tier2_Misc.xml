@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<!--================================ Tier 2: Non-electric ====================================-->
+
+	<ResearchProjectDef ParentName="AnimalArmorResearchBase">
+		<defName>BasicAnimalArmorProduction</defName>
+		<label>basic animal armor production</label>
+		<description>Learn to produce makeshift animal armor at a smithy by studying the anatomy of animals.</description>
+		<baseCost>600</baseCost>
+		<techLevel>Medieval</techLevel>
+		<prerequisites>
+			<li>Smithing</li>
+		</prerequisites>
+		<researchViewX>0</researchViewX>
+		<researchViewY>0</researchViewY>
+	</ResearchProjectDef>
+
+</Defs>
