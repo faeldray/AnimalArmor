@@ -1,12 +1,114 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Defs>
 
-	<RecipeDef ParentName="AnimalArmorInstallationBase">
-		<defName>RemoveAnimalArmor</defName>
+	<RecipeDef Name="RemoveAnimalArmorBase" Abstract="True">
 		<label>remove armor</label>
+		<description>Removes an animal's armor.</description>
+		<workerClass>Recipe_RemoveHediff</workerClass>
 		<jobString>Removing armor.</jobString>
+		<effectWorking>Surgery</effectWorking>
+		<soundWorking>Recipe_Surgery</soundWorking>
+		<workSpeedStat>MedicalOperationSpeed</workSpeedStat>
+		<workSkill>Medicine</workSkill>
+		<workSkillLearnFactor>0</workSkillLearnFactor>
 		<workAmount>2000</workAmount>
-		<addsHediff>NullAnimalArmor</addsHediff>
+		<surgerySuccessChanceFactor>Infinity</surgerySuccessChanceFactor>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Medicine</li>
+					</categories>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>Medicine</li>
+			</categories>
+		</fixedIngredientFilter>
+	</RecipeDef>
+
+	<!-- makeshift -->
+
+	<RecipeDef ParentName="RemoveAnimalArmorBase">
+		<defName>RemoveMakeshiftAnimalArmorTiny</defName>
+		<removesHediff>MakeshiftAnimalArmorTiny</removesHediff>
+	</RecipeDef>
+
+	<RecipeDef ParentName="RemoveAnimalArmorBase">
+		<defName>RemoveMakeshiftAnimalArmorSmall</defName>
+		<removesHediff>MakeshiftAnimalArmorSmall</removesHediff>
+	</RecipeDef>
+
+	<RecipeDef ParentName="RemoveAnimalArmorBase">
+		<defName>RemoveMakeshiftAnimalArmorMedium</defName>
+		<removesHediff>MakeshiftAnimalArmorMedium</removesHediff>
+	</RecipeDef>
+
+	<RecipeDef ParentName="RemoveAnimalArmorBase">
+		<defName>RemoveMakeshiftAnimalArmorLarge</defName>
+		<removesHediff>MakeshiftAnimalArmorLarge</removesHediff>
+	</RecipeDef>
+
+	<RecipeDef ParentName="RemoveAnimalArmorBase">
+		<defName>RemoveMakeshiftAnimalArmorHuge</defName>
+		<removesHediff>MakeshiftAnimalArmorHuge</removesHediff>
+	</RecipeDef>
+
+	<!-- standard -->
+
+	<RecipeDef ParentName="RemoveAnimalArmorBase">
+		<defName>RemoveStandardAnimalArmorTiny</defName>
+		<removesHediff>StandardAnimalArmorTiny</removesHediff>
+	</RecipeDef>
+
+	<RecipeDef ParentName="RemoveAnimalArmorBase">
+		<defName>RemoveStandardAnimalArmorSmall</defName>
+		<removesHediff>StandardAnimalArmorSmall</removesHediff>
+	</RecipeDef>
+
+	<RecipeDef ParentName="RemoveAnimalArmorBase">
+		<defName>RemoveStandardAnimalArmorMedium</defName>
+		<removesHediff>StandardAnimalArmorMedium</removesHediff>
+	</RecipeDef>
+
+	<RecipeDef ParentName="RemoveAnimalArmorBase">
+		<defName>RemoveStandardAnimalArmorLarge</defName>
+		<removesHediff>StandardAnimalArmorLarge</removesHediff>
+	</RecipeDef>
+
+	<RecipeDef ParentName="RemoveAnimalArmorBase">
+		<defName>RemoveStandardAnimalArmorHuge</defName>
+		<removesHediff>StandardAnimalArmorHuge</removesHediff>
+	</RecipeDef>
+
+	<!-- heavy -->
+
+	<RecipeDef ParentName="RemoveAnimalArmorBase">
+		<defName>RemoveHeavyAnimalArmorTiny</defName>
+		<removesHediff>HeavyAnimalArmorTiny</removesHediff>
+	</RecipeDef>
+
+	<RecipeDef ParentName="RemoveAnimalArmorBase">
+		<defName>RemoveHeavyAnimalArmorSmall</defName>
+		<removesHediff>HeavyAnimalArmorSmall</removesHediff>
+	</RecipeDef>
+
+	<RecipeDef ParentName="RemoveAnimalArmorBase">
+		<defName>RemoveHeavyAnimalArmorMedium</defName>
+		<removesHediff>HeavyAnimalArmorMedium</removesHediff>
+	</RecipeDef>
+
+	<RecipeDef ParentName="RemoveAnimalArmorBase">
+		<defName>RemoveHeavyAnimalArmorLarge</defName>
+		<removesHediff>HeavyAnimalArmorLarge</removesHediff>
+	</RecipeDef>
+
+	<RecipeDef ParentName="RemoveAnimalArmorBase">
+		<defName>RemoveHeavyAnimalArmorHuge</defName>
+		<removesHediff>HeavyAnimalArmorHuge</removesHediff>
 	</RecipeDef>
 
 </Defs>

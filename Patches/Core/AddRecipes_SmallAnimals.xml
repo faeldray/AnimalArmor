@@ -27,7 +27,9 @@
 					<li>InstallMakeshiftAnimalArmorSmall</li>
 					<li>InstallStandardAnimalArmorSmall</li>
 					<li>InstallHeavyAnimalArmorSmall</li>
-					<li>RemoveAnimalArmor</li>
+					<li>RemoveMakeshiftAnimalArmorSmall</li>
+					<li>RemoveStandardAnimalArmorSmall</li>
+					<li>RemoveHeavyAnimalArmorSmall</li>
 				</value>
 			</li>
 		</operations>
