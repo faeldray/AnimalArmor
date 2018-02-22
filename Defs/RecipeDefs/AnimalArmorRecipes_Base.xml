@@ -7,6 +7,7 @@
 		<jobString>Making makeshift animal armor.</jobString>
 		<workSpeedStat>SmithingSpeed</workSpeedStat>
 		<soundWorking>Recipe_Smith</soundWorking>
+		<unfinishedThingDef>UnfinishedAnimalArmor</unfinishedThingDef>
 		<researchPrerequisite>BasicAnimalArmorProduction</researchPrerequisite>
 		<skillRequirements>
 			<Crafting>3</Crafting>
@@ -26,6 +27,7 @@
 		<jobString>Making standard animal armor.</jobString>
 		<workSpeedStat>SmithingSpeed</workSpeedStat>
 		<soundWorking>Recipe_Smith</soundWorking>
+		<unfinishedThingDef>UnfinishedAnimalArmor</unfinishedThingDef>
 		<researchPrerequisite>AdvancedAnimalArmorProduction</researchPrerequisite>
 		<skillRequirements>
 			<Crafting>6</Crafting>
@@ -46,6 +48,7 @@
 		<jobString>Making heavy animal armor.</jobString>
 		<workSpeedStat>SmithingSpeed</workSpeedStat>
 		<soundWorking>Recipe_Smith</soundWorking>
+		<unfinishedThingDef>UnfinishedAnimalArmor</unfinishedThingDef>
 		<researchPrerequisite>AdvancedAnimalArmorProduction</researchPrerequisite>
 		<skillRequirements>
 			<Crafting>8</Crafting>

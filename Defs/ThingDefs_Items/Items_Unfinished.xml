@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<ThingDef ParentName="UnfinishedBase">
+		<defName>UnfinishedAnimalArmor</defName>
+		<label>unfinished animal armor</label>
+		<graphicData>
+			<texPath>Things/Item/Unfinished/UnfinishedTechArmor</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<stuffCategories />
+	</ThingDef>
+
+</Defs>
