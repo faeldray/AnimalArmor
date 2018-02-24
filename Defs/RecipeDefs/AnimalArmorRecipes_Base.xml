@@ -73,7 +73,7 @@
 		<workSpeedStat>MedicalOperationSpeed</workSpeedStat>
 		<workSkill>Medicine</workSkill>
 		<workSkillLearnFactor>0</workSkillLearnFactor>
-		<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
+		<workerClass>Recipe_InstallImplant</workerClass>
 		<surgerySuccessChanceFactor>Infinity</surgerySuccessChanceFactor>
 		<ingredients>
 			<li>
