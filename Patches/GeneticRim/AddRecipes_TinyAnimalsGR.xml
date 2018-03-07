@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<!-- tiny animals list:
+			[defName="GR_Chickenbear" or defName="GR_Chickenlope" or defName="GR_Chickenffalo" or defName="GR_Chickenwolf" or defName="GR_Spidersnake" or defName="GR_Boomsquirrel" or defName="GR_Chickenrabbit"]-->
+			<li Class="PatchOperationTest">
+				<xpath>/Defs/ThingDef[defName="GR_Chickenbear"]</xpath>
+			</li>
+			<li Class="PatchOperationSequence">
+				<success>Always</success>
+				<operations>
+					<li Class="PatchOperationTest">
+						<xpath>/Defs/ThingDef[defName="GR_Chickenbear" or defName="GR_Chickenlope" or defName="GR_Chickenffalo" or defName="GR_Chickenwolf" or defName="GR_Spidersnake" or defName="GR_Boomsquirrel" or defName="GR_Chickenrabbit"]/recipes</xpath>
+						<success>Invert</success>
+					</li>
+					<li Class="PatchOperationAdd">
+						<xpath>/Defs/ThingDef[defName="GR_Chickenbear" or defName="GR_Chickenlope" or defName="GR_Chickenffalo" or defName="GR_Chickenwolf" or defName="GR_Spidersnake" or defName="GR_Boomsquirrel" or defName="GR_Chickenrabbit"]</xpath>
+						<value>
+							<recipes/>
+						</value>
+					</li>
+				</operations>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/ThingDef[defName="GR_Chickenbear" or defName="GR_Chickenlope" or defName="GR_Chickenffalo" or defName="GR_Chickenwolf" or defName="GR_Spidersnake" or defName="GR_Boomsquirrel" or defName="GR_Chickenrabbit"]/recipes</xpath>
+				<value>
+					<li>InstallMakeshiftAnimalArmorTiny</li>
+					<li>InstallStandardAnimalArmorTiny</li>
+					<li>InstallHeavyAnimalArmorTiny</li>
+					<li>RemoveMakeshiftAnimalArmorTiny</li>
+					<li>RemoveStandardAnimalArmorTiny</li>
+					<li>RemoveHeavyAnimalArmorTiny</li>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+
+</Patch>

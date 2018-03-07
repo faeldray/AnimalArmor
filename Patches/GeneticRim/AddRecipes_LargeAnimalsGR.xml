@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<!-- large animals list:
+			[defName="GR_AlphaWildBoar" or defName="GR_AlphaBoomalope" or defName="GR_AlphaOstrich" or defName="GR_Bearalope" or defName="GR_Bearffalo" or defName="GR_Boomabear" or defName="GR_Boomachicken" or defName="GR_Boomffalo" or defName="GR_Boomwolf" or defName="GR_Bearscarab" or defName="GR_Boombeetle" or defName="GR_Muffalopede" or defName="GR_Muffalope" or defName="GR_Muffalochicken" or defName="GR_Muffalowolf" or defName="GR_Boomsnake" or defName="GR_Muffalorat" or defName="GR_Thrumwolf" or defName="GR_Wolffalo"]-->
+			<li Class="PatchOperationTest">
+				<xpath>/Defs/ThingDef[defName="GR_AlphaWildBoar"]</xpath>
+			</li>
+			<li Class="PatchOperationSequence">
+				<success>Always</success>
+				<operations>
+					<li Class="PatchOperationTest">
+						<xpath>/Defs/ThingDef[defName="GR_AlphaWildBoar" or defName="GR_AlphaBoomalope" or defName="GR_AlphaOstrich" or defName="GR_Bearalope" or defName="GR_Bearffalo" or defName="GR_Boomabear" or defName="GR_Boomachicken" or defName="GR_Boomffalo" or defName="GR_Boomwolf" or defName="GR_Bearscarab" or defName="GR_Boombeetle" or defName="GR_Muffalopede" or defName="GR_Muffalope" or defName="GR_Muffalochicken" or defName="GR_Muffalowolf" or defName="GR_Boomsnake" or defName="GR_Muffalorat" or defName="GR_Thrumwolf" or defName="GR_Wolffalo"]/recipes</xpath>
+						<success>Invert</success>
+					</li>
+					<li Class="PatchOperationAdd">
+						<xpath>/Defs/ThingDef[defName="GR_AlphaWildBoar" or defName="GR_AlphaBoomalope" or defName="GR_AlphaOstrich" or defName="GR_Bearalope" or defName="GR_Bearffalo" or defName="GR_Boomabear" or defName="GR_Boomachicken" or defName="GR_Boomffalo" or defName="GR_Boomwolf" or defName="GR_Bearscarab" or defName="GR_Boombeetle" or defName="GR_Muffalopede" or defName="GR_Muffalope" or defName="GR_Muffalochicken" or defName="GR_Muffalowolf" or defName="GR_Boomsnake" or defName="GR_Muffalorat" or defName="GR_Thrumwolf" or defName="GR_Wolffalo"]</xpath>
+						<value>
+							<recipes/>
+						</value>
+					</li>
+				</operations>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/ThingDef[defName="GR_AlphaWildBoar" or defName="GR_AlphaBoomalope" or defName="GR_AlphaOstrich" or defName="GR_Bearalope" or defName="GR_Bearffalo" or defName="GR_Boomabear" or defName="GR_Boomachicken" or defName="GR_Boomffalo" or defName="GR_Boomwolf" or defName="GR_Bearscarab" or defName="GR_Boombeetle" or defName="GR_Muffalopede" or defName="GR_Muffalope" or defName="GR_Muffalochicken" or defName="GR_Muffalowolf" or defName="GR_Boomsnake" or defName="GR_Muffalorat" or defName="GR_Thrumwolf" or defName="GR_Wolffalo"]/recipes</xpath>
+				<value>
+					<li>InstallMakeshiftAnimalArmorLarge</li>
+					<li>InstallStandardAnimalArmorLarge</li>
+					<li>InstallHeavyAnimalArmorLarge</li>
+					<li>RemoveMakeshiftAnimalArmorLarge</li>
+					<li>RemoveStandardAnimalArmorLarge</li>
+					<li>RemoveHeavyAnimalArmorLarge</li>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+
+</Patch>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<!-- huge animals list:
+			[defName="GR_AlphaBear" or defName="GR_AlphaMuffalo" or defName="GR_AlphaRhinoceros" or defName="GR_Thrumbospider" or defName="GR_Muffalobear" or defName="GR_Bearodile" or defName="GR_Muffalokomodo" or defName="GR_Thrumbolizard" or defName="GR_Bearmole" or defName="GR_Thrumborat" or defName="GR_Thrumbear" or defName="GR_Thrumbalope" or defName="GR_Thrumbochicken" or defName="GR_Thrumffalo"]-->
+			<li Class="PatchOperationTest">
+				<xpath>/Defs/ThingDef[defName="GR_AlphaBear"]</xpath>
+			</li>
+			<li Class="PatchOperationSequence">
+				<success>Always</success>
+				<operations>
+					<li Class="PatchOperationTest">
+						<xpath>/Defs/ThingDef[defName="GR_AlphaBear" or defName="GR_AlphaMuffalo" or defName="GR_AlphaRhinoceros" or defName="GR_Thrumbospider" or defName="GR_Muffalobear" or defName="GR_Bearodile" or defName="GR_Muffalokomodo" or defName="GR_Thrumbolizard" or defName="GR_Bearmole" or defName="GR_Thrumborat" or defName="GR_Thrumbear" or defName="GR_Thrumbalope" or defName="GR_Thrumbochicken" or defName="GR_Thrumffalo"]/recipes</xpath>
+						<success>Invert</success>
+					</li>
+					<li Class="PatchOperationAdd">
+						<xpath>/Defs/ThingDef[defName="GR_AlphaBear" or defName="GR_AlphaMuffalo" or defName="GR_AlphaRhinoceros" or defName="GR_Thrumbospider" or defName="GR_Muffalobear" or defName="GR_Bearodile" or defName="GR_Muffalokomodo" or defName="GR_Thrumbolizard" or defName="GR_Bearmole" or defName="GR_Thrumborat" or defName="GR_Thrumbear" or defName="GR_Thrumbalope" or defName="GR_Thrumbochicken" or defName="GR_Thrumffalo"]</xpath>
+						<value>
+							<recipes/>
+						</value>
+					</li>
+				</operations>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/ThingDef[defName="GR_AlphaBear" or defName="GR_AlphaMuffalo" or defName="GR_AlphaRhinoceros" or defName="GR_Thrumbospider" or defName="GR_Muffalobear" or defName="GR_Bearodile" or defName="GR_Muffalokomodo" or defName="GR_Thrumbolizard" or defName="GR_Bearmole" or defName="GR_Thrumborat" or defName="GR_Thrumbear" or defName="GR_Thrumbalope" or defName="GR_Thrumbochicken" or defName="GR_Thrumffalo"]/recipes</xpath>
+				<value>
+					<li>InstallMakeshiftAnimalArmorHuge</li>
+					<li>InstallStandardAnimalArmorHuge</li>
+					<li>InstallHeavyAnimalArmorHuge</li>
+					<li>RemoveMakeshiftAnimalArmorHuge</li>
+					<li>RemoveStandardAnimalArmorHuge</li>
+					<li>RemoveHeavyAnimalArmorHuge</li>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+
+</Patch>
