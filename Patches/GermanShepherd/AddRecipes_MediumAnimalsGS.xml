@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<!-- medium animals list:
+			[defName="GermanShepherd"]-->
+			<li Class="PatchOperationTest">
+				<xpath>/Defs/ThingDef[defName="GermanShepherd"]</xpath>
+			</li>
+			<li Class="PatchOperationSequence">
+				<success>Always</success>
+				<operations>
+					<li Class="PatchOperationTest">
+						<xpath>/Defs/ThingDef[defName="GermanShepherd"]/recipes</xpath>
+						<success>Invert</success>
+					</li>
+					<li Class="PatchOperationAdd">
+						<xpath>/Defs/ThingDef[defName="GermanShepherd"]</xpath>
+						<value>
+							<recipes/>
+						</value>
+					</li>
+				</operations>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/ThingDef[defName="GermanShepherd"]/recipes</xpath>
+				<value>
+					<li>InstallMakeshiftAnimalArmorMedium</li>
+					<li>InstallStandardAnimalArmorMedium</li>
+					<li>InstallHeavyAnimalArmorMedium</li>
+					<li>RemoveMakeshiftAnimalArmorMedium</li>
+					<li>RemoveStandardAnimalArmorMedium</li>
+					<li>RemoveHeavyAnimalArmorMedium</li>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+
+</Patch>
